@@ -24,7 +24,7 @@ class ofApp : public ofBaseApp{
 		void gotMessage(ofMessage msg);
 
 	ofVideoGrabber grabber;
-	CentroidTracker* centroidTracker = nullptr;
+	shared_ptr<CentroidTracker> centroidTracker = nullptr;
 	cv::dnn::Net net;
 	ofImage displayImage;
 	cv::Mat cameraFrame, displayFrame;

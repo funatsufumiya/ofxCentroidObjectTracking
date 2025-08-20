@@ -14,7 +14,7 @@ void ofApp::setup(){
     grabber.setDesiredFrameRate(30);
     grabber.initGrabber(400, 300);
 
-    centroidTracker = new CentroidTracker(20);
+    centroidTracker = make_shared<CentroidTracker>(20);
 
     std::string modelTxt = ofToDataPath("model/deploy.prototxt", true);
     std::string modelBin = ofToDataPath("model/res10_300x300_ssd_iter_140000.caffemodel", true);
