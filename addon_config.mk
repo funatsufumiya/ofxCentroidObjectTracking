@@ -1,6 +1,6 @@
 meta:
 	ADDON_NAME = ofxCentroidObjectTracking
-	ADDON_DESCRIPTION =
+	ADDON_DESCRIPTION = Simple centroid object tracker
 	ADDON_AUTHOR = Fumiya Funatsu
 	ADDON_TAGS = "computer vision"
 	ADDON_URL = http://github.com/funatsufumiya/ofxCentroidObjectTracking
