@@ -67,6 +67,8 @@ void ofApp::draw(){
         auto& r = rects[0];
         ofDrawRectangle(r[0], r[1], r[2]-r[0], r[3]-r[1]);
     }
+
+    // draw paths
     for(const auto& obj : objects){
         int id = obj.first;
         const auto& path = centroidTracker->path_keeper[id];
@@ -81,10 +83,11 @@ void ofApp::draw(){
             }
         }
     }
+
     ofSetLineWidth(1);
     ofSetColor(0);
     
-    // for tracked objects
+    // draw ids
     for(const auto& obj : objects){
         int id = obj.first;
         int cx = obj.second.first;
@@ -92,7 +95,7 @@ void ofApp::draw(){
         ofDrawCircle(cx, cy, 8);
         ofDrawBitmapStringHighlight("ID:"+ofToString(id), cx+10, cy-10);
     }
-    
+
     ofSetColor(0);
     ofDrawBitmapString("", 20, 20);
 }
