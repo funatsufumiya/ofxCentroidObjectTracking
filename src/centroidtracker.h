@@ -2,10 +2,7 @@
 Created by pratheek on 2019-11-27.
 */
 
-#ifndef C___CENTROIDTRACKER_H
-#define C___CENTROIDTRACKER_H
-
-#endif //C___CENTROIDTRACKER_H
+#pragma once
 
 #include <iostream>
 #include <vector>
