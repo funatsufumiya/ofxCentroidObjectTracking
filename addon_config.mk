@@ -12,4 +12,4 @@ common:
 
 	# some addons need resources to be copied to the bin/data folder of the project
 	# specify here any files that need to be copied, you can use wildcards like * and ?
-	ADDON_DATA = model
+	ADDON_DATA = 
